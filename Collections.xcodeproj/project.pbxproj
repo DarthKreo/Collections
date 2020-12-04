@@ -64,13 +64,11 @@
 			children = (
 				C08C4765257919DC00F47B61 /* AppDelegate.swift */,
 				C08C4767257919DC00F47B61 /* SceneDelegate.swift */,
-				C08C4769257919DC00F47B61 /* ViewController.swift */,
-				C08C477B2579242C00F47B61 /* CollectionCell.swift */,
-				C08C47A72579395800F47B61 /* InsideCell.swift */,
+				C08C47AB2579432F00F47B61 /* Model.swift */,
+				C08C47D6257A81BA00F47B61 /* MainCollection */,
+				C08C47D8257A81F500F47B61 /* SubCell */,
 				C08C477F2579244E00F47B61 /* Storyboard */,
 				C08C477E2579243A00F47B61 /* Support */,
-				C08C47AB2579432F00F47B61 /* Model.swift */,
-				C08C47AF257A5AFE00F47B61 /* SectionHeader.swift */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -90,6 +88,24 @@
 				C08C4770257919DF00F47B61 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C08C47D6257A81BA00F47B61 /* MainCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C08C4769257919DC00F47B61 /* ViewController.swift */,
+				C08C477B2579242C00F47B61 /* CollectionCell.swift */,
+				C08C47AF257A5AFE00F47B61 /* SectionHeader.swift */,
+			);
+			path = MainCollection;
+			sourceTree = "<group>";
+		};
+		C08C47D8257A81F500F47B61 /* SubCell */ = {
+			isa = PBXGroup;
+			children = (
+				C08C47A72579395800F47B61 /* InsideCell.swift */,
+			);
+			path = SubCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

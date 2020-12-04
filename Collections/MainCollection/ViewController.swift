@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
     }
 }
 
@@ -46,7 +45,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         }
         return UICollectionReusableView()
     }
-    
 }
 
 // MARK: - Setup
@@ -55,7 +53,6 @@ private extension ViewController {
     
     func setupView() {
         configureCollectionViewLayout()
-        configureCollectionViewDataSource()
     }
 }
 
@@ -74,19 +71,17 @@ private extension ViewController {
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
         view.addSubview(collectionView)
     }
-    
-    func configureCollectionViewDataSource() {
-        
-    }
+
     
     func createLayout() -> UICollectionViewLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+        
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(250))
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitems: [item])
-        let section = NSCollectionLayoutSection(group: group)
         
+        let section = NSCollectionLayoutSection(group: group)
         
         let  layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(60))
         let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
